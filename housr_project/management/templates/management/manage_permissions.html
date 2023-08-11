@@ -1,0 +1,13 @@
+<form method="post">
+    {% csrf_token %}
+    {% for employee in employees %}
+        <h3>{{ employee.name }}</h3>
+        <select name="groups_{{ employee.id }}" multiple>
+            {% for group in groups %}
+                <option value="{{ group.id }}" {% if group in employee.assigned_groups.all %}selected{% endif %}>{{ group.name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+    {% endfor %}
+    <button type="submit">Save</button>
+</form>
