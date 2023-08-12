@@ -17,7 +17,7 @@ The Community Management System is a web application designed to help manage com
 - Django (version 4.2.4)
 
 ### Run Project At:
-[Housr Management](yagyansh.pythonanywhere.com)
+[Housr Management](http://yagyansh.pythonanywhere.com/)
 
 ## Screenshots
 ### Homepage
